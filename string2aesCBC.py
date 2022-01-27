@@ -50,7 +50,7 @@ class AESCipher(object):
 myAes = AESCipher(secret_key)
 
 def dependencies():
-    singleTimeWarnMessage("tamper script '%s' is only meant to be run against %s" % (os.path.basename(__file__).split(".")[0], DBMS.MYSQL))
+    singleTimeWarnMessage("使用时修改secret_key和iv!")
 
 def tamper(payload, **kwargs):
     """
